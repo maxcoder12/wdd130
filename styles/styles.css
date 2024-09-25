@@ -37,7 +37,7 @@ aside{
 }
 
 aside img{
-    max-width: 90%;
+    width: 90%;
     border: 1px solid black;
     padding: 2px;
     background-color: rgb(136, 136, 136);

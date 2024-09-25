@@ -13,6 +13,10 @@ h1{
     color: #0b466b;
 }
 
+main{
+    max-width: 800px;
+}
+
 main img{
     width: 150px;
     height: auto;

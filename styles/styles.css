@@ -1,16 +1,22 @@
+:root {
+    --dark-color: #0b466b;
+    --light-color: #e9e0e0;
+
+}
+
 nav{
-    background-color: #0b466b;
+    background-color: var(--dark-color);
     padding: 10px;
 }
 
 nav a{
-    color: #e7e7f3;
+    color: var(--light-color);
     display: block;
     padding: 20px ;
 }
 
 h1{
-    color: #0b466b;
+    color: var(--dark-color);
 }
 
 main{
@@ -20,9 +26,9 @@ main{
 main img{
     width: 150px;
     height: auto;
-    border: 1px solid #0b466b;
+    border: 1px solid var(--dark-color);
     padding: 3px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--light-color);
 }
 
 aside{
@@ -30,17 +36,20 @@ aside{
     margin: 2px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 2px;
-    background-color: #dcd6d6;
-    color: #002942;
+    background-color: var(--light-color);   
     text-align: center;
     box-shadow: 0 0 10px black;
+}
+
+aside h2{
+    color: var(--dark-color);
 }
 
 aside img{
     width: 200px;
     border: 1px solid black;
     padding: 2px;
-    background-color: rgb(136, 136, 136);
+    background-color: var(--light-color);
 }
 
 p{

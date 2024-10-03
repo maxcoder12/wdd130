@@ -59,6 +59,7 @@ aside h2{
 
 aside img{
     width: 20em;
+    height: auto;
     border: 1px solid black;
     padding: 2px;
     background-color: gray;

@@ -91,7 +91,7 @@ aside h2{
 
 aside img{
     width: 15em;
-    height: cover;
+    height: auto;
     border: 1px solid black;
     padding: 2px;
     background-color: gray;

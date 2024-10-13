@@ -11,37 +11,67 @@ body{
     top: 0;
     width: 100%;
     height: auto;
+    margin:0;
+    padding: 0;
+    
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 1em;
+    background-color: var(--primary-color);
+    padding: 2em 1em;
+}
+
+header img{
+    background-color: var(--accent-color-one);
+    padding: .3em;
+    justify-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    padding: .8rem 2rem;
+    margin: .7em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 3px solid var(--accent-color-two);
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Times New Roman', Times, serif; 
-    padding: 1rem;  
+    font-family: 'Times New Roman', Times, serif;  
     color: var(--primary-color);
-}
-p{
-    padding: .2rem 1rem;
-    color: var(--accent-color-one);
-    
-}
-footer a{
-    text-decoration: none;
 }
 
 .hero{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    justify-content: center;
 }
-.hero img{
-    width: 100%;
+
+.main-image{
+    width: 70%;
     height: auto;
+    margin: 2em 0;
     display: block;
 }
+
 .hero h1{
     position: absolute;
-    top: 1em;
+    top: 3em;
     color: var(--primary-color);
     background-color: var(--secondary-color);
     opacity: .8 ;
-    width: 100%;
+    width: 70%;
     text-align: center;
     padding: 1rem 0;
     font-size: 3em;
@@ -50,22 +80,27 @@ footer a{
 
 .hero article{
     position: absolute;
-    width: 80%;
+    width: 50%;
+    top: 25em;
     height: auto;
-    top: 16em;
-    left: 8em;
     padding: 2em;
     background-color: var(--secondary-color);
-    opacity: .92;
+    justify-items: center;
+    align-content: center;
+}
+.hero article h2{
+    text-align: center;
+    font-size: 2em;
 }
 .hero article img{
     width: 20%;
     height: auto;
     float: right;
-    margin: 1rem;
+    padding: 1em;
 }
 .hero article p{
-    font-size: 120%;
+    display: block;
+    font-size: 1rem;
 }
 
 .hero section img{
@@ -73,3 +108,108 @@ footer a{
     height: auto;
 }
 
+.history-container{
+    display: flex;
+    position: relative;
+    margin: 2em 0;
+    padding: 1em;
+    width: 90%;
+    height: auto; 
+    color: var(--primary-color);
+    background-color: var(--secondary-color);  
+}
+
+.history-container div{
+    flex-grow: 3;
+    margin: 1rem;
+}
+
+.history-container div h2{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 3em;
+}
+
+.history-container div img{
+    display: block;
+    width: 30em;
+    justify-self: center;
+    align-self: center;
+    height: auto;
+}
+
+.history-container p{
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    padding: 2em;
+}
+
+.adventure-section{
+    width: 100%;
+    margin: 1em 0 6em 0;
+}
+
+.adventure-section div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.adventure-section h2{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+.adventure-section div figure{    
+    display: block;
+    width: 20em;
+    height: auto;
+    margin: 1rem;
+    background-color: var(--accent-color-one);
+}
+.adventure-section div figure img{    
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.adventure-section div figure figcaption{
+    text-align: center;
+    padding: 1em;
+    font-size: 1.3em;
+    color: var(--secondary-color);
+}
+
+footer{
+    background-color: var(--accent-color-two);
+    padding: 2em;
+    position: relative;
+}
+
+footer p{
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+footer div{
+    position: absolute;
+    align-self: center;
+    top: 2em;
+    right: 5em;
+}
+
+footer div a{
+    text-decoration: none; 
+    margin: 1em;
+    float: left;
+    border-radius: .5rem;
+}
+
+footer div a img{
+    width: 4em;
+    background-color: #fff;
+}

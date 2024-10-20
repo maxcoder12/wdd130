@@ -390,7 +390,7 @@ legend{
     align-items: center;
 }
 
-button{
+.contact-form button{
     margin: 2em;
     grid-column: 2/3;
     width: 60%;
@@ -404,7 +404,7 @@ button{
     border: none;
     font-size: 1em;
 }
-button:hover{
+.contact-form button:hover{
     cursor: pointer;
     background-color: var(--accent-color-two);
     color: var(--secondary-color);

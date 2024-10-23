@@ -236,13 +236,12 @@ p img{
 
 .contact-info-container div p{
     font-size: .9em;
-    color: gray;
+    color: var(--primary-color);
     margin: 2rem 1rem;
 }
 .contact-info-container div p a{
     font-size: .9em;
-    color: gray;
-    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .contact-info-container iframe{
@@ -397,11 +396,12 @@ legend{
     justify-self: center;
     padding: 1em;
     text-align: center;
-    background-color: var(--accent-color-two);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--accent-color-one);
     border-radius: 1rem 1rem 0 0;
     appearance: none;
     border: none;
+    border-bottom: 3px solid var(--accent-color-one);
     font-size: 1em;
 }
 .contact-form button:hover{

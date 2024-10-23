@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Maximo Gomez">
     <meta name="description" content="A Rafting company that offers marvelous and energetic trips, in this page you can know about how to enroll in a trip and who to talk with about it. ">
-    <title>Home - Rapids</title>
+    <title>Rapids - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -21,15 +21,34 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main class="hero">
-        <h1>Welcome to the Rafting company Rapids!</h1>
-        <section class="history-container">
-            <p>Founded in 1995, <strong>Rapids</strong> started with a simple mission: to share the thrill and beauty of river rafting with adventure seekers from all walks of life. Our journey began on the rugged banks of the Colorado River, where a small group of passionate outdoor enthusiasts recognized the potential for offering guided trips through its stunning rapids and serene wilderness. What started as a weekend activity for friends soon grew into a full-fledged business, as word spread about the unique combination of excitement and natural beauty that our rafting trips provided.</p>
-            <div>
-                <h2>History</h2>
-                <img src="images/rafting-history.jpg" alt="rafting-image">
-            </div>
-            <p>Over the past 29 years, <strong>Rapids</strong> has evolved into one of the premier rafting outfitters in the region, expanding our offerings to include a range of rivers, skill levels, and experiences. We’ve grown from a handful of rafts to a fleet of state-of-the-art equipment, always prioritizing safety and environmental stewardship. Our commitment to fostering a deep connection with nature has earned us a loyal community of adventurers and conservationists alike. Today, we continue to celebrate our roots while embracing innovation, offering unforgettable rafting experiences that honor both the river and those who ride its rapids.</p>
+    <main>
+        <section class="hero">
+            <img class="home-image" src="images/home-image.jpg" alt="An image of a rafting activity.">
+            <h1>Welcome to the Rapids - Your Adventure Awaits!</h1>
+            <article>
+                <p class="home-welcome">Dive into the thrill of the wild with <strong>Rapids</strong>, where unforgettable rafting experiences meet breathtaking scenery. Whether you’re a seasoned adventurer or a first-time rafter, we offer tailored excursions for everyone.</p>
+                <h2 class="home-head-two">Why Choose Us?</h2>
+                <div class="agents-container">
+                    <div class="agent">               
+                        <div>
+                            <h3>Stunning Locations</h3>
+                            <p>Navigate through crystal-clear rivers surrounded by stunning landscapes and diverse wildlife.</p>
+                        </div>
+                    </div>
+                    <div class="agent">
+                        <div>
+                            <h3>Expert Guides</h3>
+                            <p>Our team of experienced professionals is passionate about rafting and committed to ensuring your safety and enjoyment.</p>
+                        </div>
+                    </div>
+                    <div class="agent">
+                        <div>
+                            <h3>Memorable Experiences</h3>
+                            <p>Create lasting memories with friends and family on exhilarating rapids or leisurely scenic floats.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
         <section class="adventure-section">
             <h2>Most Popular Rafting Trips!</h2>
@@ -57,30 +76,54 @@
             </div>
             <a href="trips.html">Do you want to enroll for one? <br>Click Here!</a>
         </section>
-        <section class="company-agents">
-            <h2>Company Agents</h2>
-            <div class="agents-container">
-                <div class="agent">
-                    <img src="images/employee-one.jpg" alt="a happy employee">
+        <section id="newsletter-form" class="contact-form-container">
+            <h2>Sign up to receive our monthly newsletter!</h2>
+            <form class="contact-form" action="#">
+                <fieldset class="first-fieldset">     
+                    <legend>Personal Details</legend>
                     <div>
-                        <h3>Alex Halton</h3>
+                        <label for="user-name">Username:</label>
+                        <input placeholder="Your name" id="user-name" class="user-name" type="text">
                     </div>
-                </div>
-                <div class="agent">               
-                    <img src="images/employee-two.jpg" alt="a happy employee">
                     <div>
-                        <h3>Richard Clain</h3>
+                        <label for="email">Email:</label>
+                        <input placeholder="Your email address" id="email" class="email" type="email">
                     </div>
-                </div>
-                <div class="agent">
-                    <img src="images/employee-three.jpg" alt="a happy employee">
-                    <div>
-                        <h3>Emma Hans</h3>
-                    </div>
-                </div>
+                </fieldset>
+                <button type="submit">Sign up</button>
+            </form>
+        </section>
+        <section class="purpose-container">
+            <img class="home-image" src="images/rafting-purpose.jpeg" alt="An image of a rafting activity.">
+            <h2>Our Purpose</h2>
+            <p>At <strong>Rapids</strong>, our mission is to connect people with the beauty and excitement of the great outdoors through unforgettable rafting adventures. We believe that nature has a unique way of bringing people together, and our goal is to create experiences that foster connection, adventure, and respect for the environment.</p>
+        </section>  
+        <section class="offers-container">
+            <h2>Offerings</h2>
+            <div class="offer-left">
+                <h3>Whitewater Explorer Package</h3>
+                <img src="images/rafting-class.jpg" alt="Rafting image">
+                <p>Experience the thrill of Class III and IV rapids with our Whitewater Explorer Package! Perfect for adrenaline seekers, this full-day adventure takes you through some of the most exciting stretches of the river, with exhilarating rapids, challenging twists, and stunning canyon views. Our certified guides will ensure your safety while giving you an unforgettable ride through the heart of the wilderness. This package includes a riverside lunch and all necessary gear, so all you need to bring is your sense of adventure!</p>
+                <ul>
+                    <li><b>Duration:</b> Full day (6-8 hours).</li>
+                    <li><b>Difficulty:</b> Intermediate to Advanced.</li>
+                    <li><b>Includes:</b> Safety briefing, lunch, gear(helmets, life jackets, wetsuits).</li>
+                    <li><b>Ideal For:</b> Thrill-seekers, groups, adventure enthusiasts.</li>
+                </ul>
             </div>
-            <a href="contact.html#contact-form">Send us a Message!</a>
-        </section> 
+            <div class="offer-right">
+                <h3>Scenic Family Float</h3>
+                <img src="images/rafting-family.jpg" alt="rafting-image">
+                <p>For a more relaxed and family-friendly river experience, the Scenic Family Float is the perfect way to enjoy nature without the intensity of whitewater rapids. This half-day trip takes you through calm, peaceful stretches of the river, where you can soak in breathtaking scenery, spot wildlife, and spend quality time with loved ones. Our experienced guides will ensure a fun and safe journey for all ages, making this the ideal choice for families, first-time rafters, or anyone seeking a serene day on the water.</p>
+                <ul>
+                    <li><b>Duration:</b> Half day (3-4 hours).</li>
+                    <li><b>Difficulty:</b> Easy (suitable for all skill levels).</li>
+                    <li><b>Includes:</b> Guide, safety gear, light refreshments.</li>
+                    <li><b>Ideal For:</b> Families, beginners, nature lovers.</li>
+                </ul>
+            </div>
+            <a href="trips.html">Choose One!</a>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Rapids - Maximo Gomez</p>

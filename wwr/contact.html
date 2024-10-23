@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/rafting.css">
     <meta name="author" content="Maximo Gomez">
-    <meta name="description" content="This is a Rapids contact-us page for useful information about the trips, places or even the schedules. Here you could know our agents and get in contact with them. Also there is a contact us form so we can receive your message.">    <!-- I didn't import any google fonts, because I selected two web saved fonts -->
+    <meta name="description" content="This is a Rapids contact-us page for useful information about the trips, places or even the schedules. Here you could know our agents and get in contact with them. Also there is a contact us form so we can receive your message.">   
     <title>Contact | Rapids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
@@ -35,35 +38,37 @@
         </section>
         <section class="company-agents">
             <h2>Company Agents</h2>
-            <div class="agent">
-                <img src="images/employee-one.jpg" alt="a happy employee">
-                <div>
-                    <h3>Alex Halton</h3>
-                    <p><img src="images/location.png" alt="location icon">1635-1527 W 1065 S, Springville, UT 84663, USA</p>
-                    <p><img src="images/email.png" alt="email icon"><a href="mailto:alxhalton@gmail.com">alxhalton@gmail.com</a></p>
-                    <p><img src="images/phone.png" alt="phone icon">+1 (121) 2514-2587</p>
+            <div class="agents-container">
+                <div class="agent">
+                    <img src="images/employee-one.jpg" alt="a happy employee">
+                    <div>
+                        <h3>Alex Halton</h3>
+                        <p><img src="images/location.png" alt="location icon">1635-1527 W 1065 S, Springville, UT 84663, USA</p>
+                        <p><img src="images/email.png" alt="email icon"><a href="mailto:alxhalton@gmail.com">alxhalton@gmail.com</a></p>
+                        <p><img src="images/phone.png" alt="phone icon">+1 (121) 2514-2587</p>
+                    </div>
                 </div>
-            </div>
-            <div class="agent">               
-                <img src="images/employee-two.jpg" alt="a happy employee">
-                <div>
-                    <h3>Richard Clain</h3>
-                    <p><img src="images/location.png" alt="location icon">W 350 N, Springville, UT 84663, USA</p>
-                    <p><img src="images/email.png" alt="email icon"><a href="mailto:richclain@gmail.com">richclain@gmail.com</a></p>
-                    <p><img src="images/phone.png" alt="phone icon">+1 (152) 2154-2547</p>
+                <div class="agent">               
+                    <img src="images/employee-two.jpg" alt="a happy employee">
+                    <div>
+                        <h3>Richard Clain</h3>
+                        <p><img src="images/location.png" alt="location icon">W 350 N, Springville, UT 84663, USA</p>
+                        <p><img src="images/email.png" alt="email icon"><a href="mailto:richclain@gmail.com">richclain@gmail.com</a></p>
+                        <p><img src="images/phone.png" alt="phone icon">+1 (152) 2154-2547</p>
+                    </div>
                 </div>
-            </div>
-            <div class="agent">
-                <img src="images/employee-three.jpg" alt="a happy employee">
-                <div>
-                    <h3>Emma Hans</h3>
-                    <p><img src="images/location.png" alt="location icon">120 N Center St, Lehi, UT 84043, USA</p>
-                    <p><img src="images/email.png" alt="email icon"><a href="mailto:emhans@gmail.com">emhans@gmail.com</a></p>
-                    <p><img src="images/phone.png" alt="phone icon">+1 (121) 2154-2236</p>
+                <div class="agent">
+                    <img src="images/employee-three.jpg" alt="a happy employee">
+                    <div>
+                        <h3>Emma Hans</h3>
+                        <p><img src="images/location.png" alt="location icon">120 N Center St, Lehi, UT 84043, USA</p>
+                        <p><img src="images/email.png" alt="email icon"><a href="mailto:emhans@gmail.com">emhans@gmail.com</a></p>
+                        <p><img src="images/phone.png" alt="phone icon">+1 (121) 2154-2236</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contact-form-container">
+        <section id="contact-form" class="contact-form-container">
             <h2>Contact us!</h2>
             <form class="contact-form" action="#">
                 <fieldset class="first-fieldset">     
@@ -106,7 +111,7 @@
     </main>
     <footer>
         <p>&copy; 2024 Rapids - Maximo Gomez</p>
-        <p><a href="https://app.moqups.com/gu1qpjTrGvzpe5cidb1VCyDedBBahncY/view/page/ad12de680">WireFrame</a></p>
+        <p><a target="_blank" href="https://app.moqups.com/gu1qpjTrGvzpe5cidb1VCyDedBBahncY/view/page/ad12de680">WireFrame</a></p>
         <div>
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook">

@@ -148,7 +148,6 @@ main h1{
     width: 90%;
     height: auto;
     grid-column: 2/4;
-    background-color: red;
     margin: 2em auto;
 }
 

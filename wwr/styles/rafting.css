@@ -261,6 +261,157 @@ main h1{
     border-bottom: 3px solid var(--primary-color);
 }
 
+.trips-container{
+    display: grid;
+    grid-column: 1/4;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.trips-container > h2{
+    text-align: center;
+    width: 100%;
+    grid-column: 1/4;
+    font-size: 2em;
+}
+
+.trips-container > div{
+    grid-column: 1/4;
+    width: 80%;
+    height: auto;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.trips-container > div > img{
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.trips-container > div > div{
+    max-width: 30%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.8em;
+}
+
+.trips-container > div > div > h4{
+    border-bottom: 2px solid var(--primary-color);
+    margin-top: 2em;
+    padding-bottom: 1em;
+}
+
+.trips-container > div > div > a{
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    padding: .7em 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color-two);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.trips-container > div > div > a:hover{
+    background-color: var(--accent-color-two);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.available-trips-container{
+    grid-column: 1/4;
+    margin: 4em 0;
+}
+
+.available-trips-container > h2{
+    font-size: 2.6em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+th, td {
+    border: 1px solid var(--accent-color-two);
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1em 2em;
+    height: auto;
+}
+
+td:first-child, td:last-child{
+    width: 25%;
+    height: auto;
+    padding: 0;
+}
+
+td > figure{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+td > figure > img, iframe{
+    width: 100%;
+    height: 20em;
+    border: none;
+}
+
+td > figure > figcaption{
+    font-size: 1.5em;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: .5em;
+}
+
+td:nth-child(2){
+    text-align: left;
+}
+
+td > a{
+    display: block;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color-two);
+    font-size: 1em;
+    align-self: center;
+} 
+
+td > a:hover{
+    background-color: var(--accent-color-two);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+} 
+
+.icon{
+    width: 2em;
+}
+
 .about-container{
     grid-column: 1/4;
     position: relative;
@@ -390,7 +541,6 @@ main h1{
     background-color: var(--secondary-color);
 }
 .adventure-section div figure img{    
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -400,7 +550,27 @@ main h1{
     font-size: 1.3em;
     color: var(--primary-color);
 }
-.adventure-section a{
+
+.adventure-section div figure > a{
+    display: block;
+    width: 30%;
+    padding: 1em;
+    margin: 1em auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color-two);
+    font-size: 1em;
+}
+
+.adventure-section div figure > a:hover{
+    background-color: var(--accent-color-two);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color-one);
+}
+
+.adventure-section > a{
     display: block;
     justify-self: center;
     background-color: var(--secondary-color);
@@ -414,7 +584,7 @@ main h1{
     line-height: 2em;
 }
 
-.adventure-section a:hover{
+.adventure-section > a:hover{
     border-bottom: .5rem solid var(--accent-color-two);
     background-color: var(--primary-color);
     color: var(--secondary-color);
